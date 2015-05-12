@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  Doing
 //
-//  Created by 周红俊 on 15/5/12.
+//  Created by Zane on 15/5/12.
 //  Copyright (c) 2015年 Zane. All rights reserved.
 //
 

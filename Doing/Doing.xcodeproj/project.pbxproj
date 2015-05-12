@@ -14,6 +14,7 @@
 		581EE9A91B019E270071D7AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581EE9A81B019E270071D7AD /* Images.xcassets */; };
 		581EE9AC1B019E270071D7AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581EE9AA1B019E270071D7AD /* LaunchScreen.xib */; };
 		581EE9B81B019E270071D7AD /* DoingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9B71B019E270071D7AD /* DoingTests.m */; };
+		581EE9CE1B01BFA30071D7AD /* ZDTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9CD1B01BFA30071D7AD /* ZDTask.m */; };
 		E66C2EE7110841218EF88FC9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA445F727200DFF4F587BE2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		581EE9B11B019E270071D7AD /* DoingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		581EE9B61B019E270071D7AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		581EE9B71B019E270071D7AD /* DoingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoingTests.m; sourceTree = "<group>"; };
+		581EE9CC1B01BFA30071D7AD /* ZDTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTask.h; sourceTree = "<group>"; };
+		581EE9CD1B01BFA30071D7AD /* ZDTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTask.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,7 @@
 				581EE9A01B019E270071D7AD /* AppDelegate.m */,
 				581EE9A21B019E270071D7AD /* ViewController.h */,
 				581EE9A31B019E270071D7AD /* ViewController.m */,
+				581EE9C61B01BF3A0071D7AD /* Task */,
 				581EE9A51B019E270071D7AD /* Main.storyboard */,
 				581EE9A81B019E270071D7AD /* Images.xcassets */,
 				581EE9AA1B019E270071D7AD /* LaunchScreen.xib */,
@@ -132,6 +136,47 @@
 				581EE9B61B019E270071D7AD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		581EE9C61B01BF3A0071D7AD /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				581EE9C81B01BF7A0071D7AD /* Controllers */,
+				581EE9C91B01BF7A0071D7AD /* Model */,
+				581EE9CA1B01BF7A0071D7AD /* Tools */,
+				581EE9CB1B01BF7A0071D7AD /* Views */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		581EE9C81B01BF7A0071D7AD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		581EE9C91B01BF7A0071D7AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				581EE9CC1B01BFA30071D7AD /* ZDTask.h */,
+				581EE9CD1B01BFA30071D7AD /* ZDTask.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		581EE9CA1B01BF7A0071D7AD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		581EE9CB1B01BF7A0071D7AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AE42FA873CA475CEC1092AAE /* Pods */ = {
@@ -278,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581EE9CE1B01BFA30071D7AD /* ZDTask.m in Sources */,
 				581EE9A41B019E270071D7AD /* ViewController.m in Sources */,
 				581EE9A11B019E270071D7AD /* AppDelegate.m in Sources */,
 				581EE99E1B019E270071D7AD /* main.m in Sources */,
