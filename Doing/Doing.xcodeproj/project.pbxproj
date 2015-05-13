@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		581EE99E1B019E270071D7AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE99D1B019E270071D7AD /* main.m */; };
 		581EE9A11B019E270071D7AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9A01B019E270071D7AD /* AppDelegate.m */; };
-		581EE9A41B019E270071D7AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9A31B019E270071D7AD /* ViewController.m */; };
 		581EE9A71B019E270071D7AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581EE9A51B019E270071D7AD /* Main.storyboard */; };
 		581EE9A91B019E270071D7AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581EE9A81B019E270071D7AD /* Images.xcassets */; };
 		581EE9AC1B019E270071D7AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581EE9AA1B019E270071D7AD /* LaunchScreen.xib */; };
 		581EE9B81B019E270071D7AD /* DoingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9B71B019E270071D7AD /* DoingTests.m */; };
 		581EE9CE1B01BFA30071D7AD /* ZDTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9CD1B01BFA30071D7AD /* ZDTask.m */; };
+		581EE9D11B01F3060071D7AD /* ZDTaskAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9D01B01F3060071D7AD /* ZDTaskAllViewController.m */; };
+		581EE9D51B01F9E40071D7AD /* ZDTaskCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 581EE9D31B01F9E40071D7AD /* ZDTaskCollectionViewCell.m */; };
+		581EE9D61B01F9E40071D7AD /* ZDTaskCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581EE9D41B01F9E40071D7AD /* ZDTaskCollectionViewCell.xib */; };
+		586BF06F1B02F03200DBA907 /* ZDTaskNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 586BF06E1B02F03200DBA907 /* ZDTaskNewViewController.m */; };
 		E66C2EE7110841218EF88FC9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA445F727200DFF4F587BE2 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +40,6 @@
 		581EE99D1B019E270071D7AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		581EE99F1B019E270071D7AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		581EE9A01B019E270071D7AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		581EE9A21B019E270071D7AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		581EE9A31B019E270071D7AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		581EE9A61B019E270071D7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		581EE9A81B019E270071D7AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		581EE9AB1B019E270071D7AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +48,13 @@
 		581EE9B71B019E270071D7AD /* DoingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoingTests.m; sourceTree = "<group>"; };
 		581EE9CC1B01BFA30071D7AD /* ZDTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTask.h; sourceTree = "<group>"; };
 		581EE9CD1B01BFA30071D7AD /* ZDTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTask.m; sourceTree = "<group>"; };
+		581EE9CF1B01F3060071D7AD /* ZDTaskAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTaskAllViewController.h; sourceTree = "<group>"; };
+		581EE9D01B01F3060071D7AD /* ZDTaskAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTaskAllViewController.m; sourceTree = "<group>"; };
+		581EE9D21B01F9E40071D7AD /* ZDTaskCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTaskCollectionViewCell.h; sourceTree = "<group>"; };
+		581EE9D31B01F9E40071D7AD /* ZDTaskCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTaskCollectionViewCell.m; sourceTree = "<group>"; };
+		581EE9D41B01F9E40071D7AD /* ZDTaskCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDTaskCollectionViewCell.xib; sourceTree = "<group>"; };
+		586BF06D1B02F03200DBA907 /* ZDTaskNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTaskNewViewController.h; sourceTree = "<group>"; };
+		586BF06E1B02F03200DBA907 /* ZDTaskNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTaskNewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +109,6 @@
 			children = (
 				581EE99F1B019E270071D7AD /* AppDelegate.h */,
 				581EE9A01B019E270071D7AD /* AppDelegate.m */,
-				581EE9A21B019E270071D7AD /* ViewController.h */,
-				581EE9A31B019E270071D7AD /* ViewController.m */,
 				581EE9C61B01BF3A0071D7AD /* Task */,
 				581EE9A51B019E270071D7AD /* Main.storyboard */,
 				581EE9A81B019E270071D7AD /* Images.xcassets */,
@@ -152,6 +158,10 @@
 		581EE9C81B01BF7A0071D7AD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				581EE9CF1B01F3060071D7AD /* ZDTaskAllViewController.h */,
+				581EE9D01B01F3060071D7AD /* ZDTaskAllViewController.m */,
+				586BF06D1B02F03200DBA907 /* ZDTaskNewViewController.h */,
+				586BF06E1B02F03200DBA907 /* ZDTaskNewViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +185,9 @@
 		581EE9CB1B01BF7A0071D7AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				581EE9D21B01F9E40071D7AD /* ZDTaskCollectionViewCell.h */,
+				581EE9D31B01F9E40071D7AD /* ZDTaskCollectionViewCell.m */,
+				581EE9D41B01F9E40071D7AD /* ZDTaskCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				581EE9A71B019E270071D7AD /* Main.storyboard in Resources */,
+				581EE9D61B01F9E40071D7AD /* ZDTaskCollectionViewCell.xib in Resources */,
 				581EE9AC1B019E270071D7AD /* LaunchScreen.xib in Resources */,
 				581EE9A91B019E270071D7AD /* Images.xcassets in Resources */,
 			);
@@ -324,9 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				581EE9CE1B01BFA30071D7AD /* ZDTask.m in Sources */,
-				581EE9A41B019E270071D7AD /* ViewController.m in Sources */,
+				581EE9D11B01F3060071D7AD /* ZDTaskAllViewController.m in Sources */,
 				581EE9A11B019E270071D7AD /* AppDelegate.m in Sources */,
 				581EE99E1B019E270071D7AD /* main.m in Sources */,
+				586BF06F1B02F03200DBA907 /* ZDTaskNewViewController.m in Sources */,
+				581EE9D51B01F9E40071D7AD /* ZDTaskCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

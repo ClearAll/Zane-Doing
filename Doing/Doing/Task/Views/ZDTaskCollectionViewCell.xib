@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="ZDTaskCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是任务标题这是任务标题这是任务标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyy-77-4bW">
+                        <rect key="frame" x="12" y="8" width="296" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="w0A-Dt-0Q6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任务剩余：1小时29分5秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRC-w3-62U">
+                        <rect key="frame" x="12" y="31" width="176" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="EVb-Uj-ZnZ"/>
+                            <constraint firstAttribute="width" constant="176" id="F2s-ON-N2v"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Qyy-77-4bW" secondAttribute="centerX" id="2BO-Vo-zAO"/>
+                <constraint firstItem="uRC-w3-62U" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="58A-3N-EXe"/>
+                <constraint firstAttribute="centerY" secondItem="Qyy-77-4bW" secondAttribute="centerY" id="Ijx-MB-rTB"/>
+                <constraint firstAttribute="bottom" secondItem="uRC-w3-62U" secondAttribute="bottom" constant="8" id="MZD-pE-QU6"/>
+                <constraint firstItem="Qyy-77-4bW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="hNz-ZY-Kzw"/>
+                <constraint firstItem="Qyy-77-4bW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="pQ3-ra-aFc"/>
+                <constraint firstAttribute="trailing" secondItem="Qyy-77-4bW" secondAttribute="trailing" constant="12" id="vRH-74-G8B"/>
+            </constraints>
+            <size key="customSize" width="320" height="60"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2BO-Vo-zAO"/>
+                    <exclude reference="Ijx-MB-rTB"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="taskName" destination="Qyy-77-4bW" id="5SG-Yu-iQ3"/>
+                <outlet property="taskSurplusTime" destination="uRC-w3-62U" id="4dv-JJ-f0O"/>
+            </connections>
+            <point key="canvasLocation" x="382" y="385"/>
+        </collectionViewCell>
+    </objects>
+</document>

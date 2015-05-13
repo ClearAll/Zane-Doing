@@ -13,28 +13,18 @@
 - (NSString *)spendTime
 {
     NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:_createdAt toDate:[NSDate date] options:0];
-    NSString *time = @"";
-    if (dateComponents)
-    {
-        if (dateComponents.month > 0)
-        {
-            time = [NSString stringWithFormat:@"%ld月%ld天%ld时%ld分%ld秒",(long)dateComponents.month,(long)dateComponents.day,(long)dateComponents.hour,(long)dateComponents.minute,(long)dateComponents.second];
-        }
-        else if (dateComponents.day > 0)
-        {
-            time = [NSString stringWithFormat:@"%ld天%ld时%ld分%ld秒",(long)dateComponents.day,(long)dateComponents.hour,(long)dateComponents.minute,(long)dateComponents.second];
-        }
-        else if (dateComponents.hour > 0)
-        {
-            time = [NSString stringWithFormat:@"%ld时%ld分%ld秒",(long)dateComponents.hour,(long)dateComponents.minute,(long)dateComponents.second];
-        }
-    }
-    return time;
+    return [self formatTimeJetLagWithDateComponents:dateComponents];
 }
 
 - (NSString *)surplusTime
 {
     NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond fromDate:[NSDate date] toDate:_expectFinishedAt options:0];
+   
+    return [self formatTimeJetLagWithDateComponents:dateComponents];
+}
+
+- (NSString *)formatTimeJetLagWithDateComponents:(NSDateComponents *)dateComponents
+{
     NSString *time = @"";
     if (dateComponents)
     {
@@ -49,6 +39,14 @@
         else if (dateComponents.hour > 0)
         {
             time = [NSString stringWithFormat:@"%ld时%ld分%ld秒",(long)dateComponents.hour,(long)dateComponents.minute,(long)dateComponents.second];
+        }
+        else if (dateComponents.minute > 0)
+        {
+            time = [NSString stringWithFormat:@"%ld分%ld秒",(long)dateComponents.minute,(long)dateComponents.second];
+        }
+        else if (dateComponents.second > 0)
+        {
+            time = [NSString stringWithFormat:@"%ld秒",(long)dateComponents.second];
         }
     }
     return time;

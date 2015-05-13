@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZDTaskAllViewController.h
 //  Doing
 //
 //  Created by Zane on 15/5/12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZDTaskAllViewController : UIViewController
 
 @end
-

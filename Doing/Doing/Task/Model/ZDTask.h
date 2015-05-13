@@ -32,9 +32,14 @@ typedef NS_ENUM(NSInteger, TaskState)
 @property (nonatomic, assign) NSInteger taskId;
 
 /**
+ *  任务名字
+ */
+@property (nonatomic, strong) NSString *taskName;
+
+/**
  *  任务描述
  */
-@property (nonatomic, copy  ) NSString *taskDescription;
+@property (nonatomic, strong) NSString *taskDescription;
 
 /**
  *  创建时间
