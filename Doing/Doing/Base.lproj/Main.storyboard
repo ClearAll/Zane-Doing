@@ -110,24 +110,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-A2-Mwk">
-                                <rect key="frame" x="54" y="72" width="212" height="30"/>
+                                <rect key="frame" x="92" y="72" width="212" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1GY-sS-ag3">
-                                <rect key="frame" x="40" y="110" width="240" height="128"/>
+                                <rect key="frame" x="21" y="110" width="283" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="V87-QG-5tD">
-                                <rect key="frame" x="0.0" y="406" width="320" height="162"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdk-qc-yvs">
+                                <rect key="frame" x="21" y="77" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="V87-QG-5tD">
+                                <rect key="frame" x="0.0" y="568" width="320" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="EZH-v4-b38"/>
+                                </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="453178199.74034703">
                                     <!--2015-05-13 02:49:59 +0000-->
                                 </date>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="V87-QG-5tD" secondAttribute="bottom" constant="-162" id="CLi-KA-87m"/>
+                            <constraint firstItem="V87-QG-5tD" firstAttribute="leading" secondItem="bDX-rw-RDB" secondAttribute="leadingMargin" constant="-16" id="MTh-Ss-blo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V87-QG-5tD" secondAttribute="trailing" constant="-16" id="j4I-x5-eHA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Task" id="Urx-eq-Qoo">
                         <barButtonItem key="leftBarButtonItem" image="iconfont-back" id="hfp-LP-gvs">
@@ -137,6 +151,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="datePickerBottomConstraint" destination="CLi-KA-87m" id="qjr-mM-VpP"/>
+                        <outlet property="taskDatePicker" destination="V87-QG-5tD" id="Z3I-2M-ILg"/>
+                        <outlet property="taskDescriptionView" destination="1GY-sS-ag3" id="cw9-C1-Wts"/>
+                        <outlet property="taskNameField" destination="Pbf-A2-Mwk" id="nbN-cD-pab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o8s-uf-vIX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

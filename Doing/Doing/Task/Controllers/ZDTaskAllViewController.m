@@ -24,7 +24,6 @@ static NSString *cellIdentifier = @"listCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    __weak typeof(self) weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^
     {
         for (int idx = 0; idx < 100; idx++)
@@ -32,9 +31,9 @@ static NSString *cellIdentifier = @"listCell";
             ZDTask *task = [[ZDTask alloc] init];
             task.taskName = [NSString stringWithFormat:@"这是任务%d",idx+1];
             task.expectFinishedAt = [NSDate dateWithTimeIntervalSinceNow:1789 + idx * 10];
-            [weakSelf.tasks addObject:task];
+            [self.tasks addObject:task];
         }
-        [weakSelf.collectionView reloadData];
+        [self.collectionView reloadData];
     });
     
 

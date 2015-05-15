@@ -7,8 +7,13 @@
 //
 
 #import "ZDTaskNewViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface ZDTaskNewViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *taskNameField;
+@property (weak, nonatomic) IBOutlet UITextView *taskDescriptionView;
+@property (weak, nonatomic) IBOutlet UIDatePicker *taskDatePicker;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *datePickerBottomConstraint;
 
 @end
 
@@ -24,6 +29,9 @@
 {
     [super viewWillDisappear:animated];
     self.tabBarController.tabBar.hidden = NO;
+    [self.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
 }
 
 - (void)viewDidLoad {
